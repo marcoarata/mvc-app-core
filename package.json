@@ -1,0 +1,33 @@
+{
+  "name": "mvc-app-core",
+  "version": "1.0.0",
+  "description": "mvc-application-template",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon",
+    "ui": "node bs-config.js",
+    "build:css": "npx tailwindcss -c ./tailwind.config.js -i assets/css/tailwind.css -o assets/css/style.css",
+    "watch:css": "npx tailwindcss -c ./tailwind.config.js -i assets/css/tailwind.css -o assets/css/style.css --watch",
+    "start": "node --env-file .env main.js",
+    "start:prod": "pm2 start ecosystem.config.cjs"
+  },
+  "keywords": [],
+  "author": "Marco Arata",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.3.4",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "nodemon": "^3.1.0",
+    "tailwindcss": "^3.4.3"
+  }
+}

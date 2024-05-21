@@ -1,0 +1,27 @@
+include ../../includes/head
+
+
+<main class="flex flex-col lg:flex-row lg:justify-between">
+    <section class="ml-6">
+
+        <a href="/customer"><p class="text-2xl text-sky-500 underline mt-4 p-4">← Volver Atrás</p></a>
+
+        <p class="text-xl pl-8"><span class="font-medium">UID:</span> #{ customer.id }</p>
+        <p class="text-xl pl-8"><span class="font-medium">Nombre Completo:</span> #{ customer.name }</p>
+        <p class="text-xl pl-8"><span class="font-medium">RUT Chileno:</span> #{ customer.rut }</p>
+        <p class="text-xl pl-8"><span class="font-medium">Correo Electrónico:</span> #{ customer.email }</p>
+        <p class="text-xl pl-8"><span class="font-medium">WhatsApp:</span> #{ customer.whatsapp }</p>
+
+
+    </section>
+
+    <section class="pl-8 mt-8 lg:mr-8">
+
+        <a class="bg-transparent hover:bg-sky-500 text-sky-500 font-medium hover:text-white py-2 px-4 border border-sky-500 hover:border-transparent rounded" href="/customer/#{ customer.id }/edit">+ Editar Cliente</a> <br>
+
+    </section>
+
+</main>
+
+
+include ../../includes/footer
